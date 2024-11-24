@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="shortcut icon" href="imagens/logo-claquete.png" type="image/x-icon">
+	<title>MovieMood</title>
+</head>
+<body>
+	<header>
+		<img  class="img-header" src="imagens/logos-header.png" alt="">
+		<div class="buttons">
+			<button id="button-1"><a href="#newsLetter">NewsLetter</a></button>
+			<button id="button-2"><a href="#download">Download</a></button>
+			<button id="button-3"><a href="#app-intro">App</a></button>
+		</div>	
+	</header>
+	<main>
+		<section id="app-intro">
+			<img id="gif-review" src="imagens/gif-final.gif" alt="">
+
+			<div id="texts">
+				<div data-aos="fade-down"
+     			data-aos-easing="linear"
+     			data-aos-duration="1500">
+					<h1 class="title-app-slogan">Catch the <span>Mood</span>,</h1>
+					<h1 class="title-app-slogan">Share Your View</h1>
+					<p id="text-app">MovieMood is your ultimate destination for movie lovers who live for great stories and unforgettable scenes. Post your reviews, share your opinions, and discover how the latest films match your vibe.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="download">
+			<div data-aos="fade-up"
+			data-aos-duration="2000">
+				<img  id="posters" src="imagens/posters.png" alt="">
+			</div>
+
+			<div data-aos="zoom-out-up"
+			data-aos-duration="2000">
+				<div id="texts-download">
+					<h1 class="title-download">May the <span>Reviews</span> Be</h1>
+					<h1 class="title-download">Ever in Your Favor</h1>
+					<p id="text-download">Classic or not, every movie out there is just <br> dying to hear your review. Don’t keep them waiting!</p>
+					<button id="download-button">Download</button>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="reviews-section">
+			<div data-aos="fade-down"
+     			data-aos-easing="linear"
+     			data-aos-duration="1500">
+				<p class="text-review-users">Don't miss out on the drama! </p>
+				<p class="text-review-users">Check out what our users are writing </p> 
+				<p class="text-review-users" >— their reviews are more intense than a plot twist!</p>
+				
+			</div>
+			<div class="reviews">
+				<div class="comment"><h1 class="movie-title">La La Land</h1></div>
+				<div class="comment"><h1 class="movie-title">Little Women</h1></div>
+				<div class="comment"><h1 class="movie-title">Barbie</h1></div>
+			</div>
+		</section>
+
+		<section id="newsLetter">
+			<img id="newsletter-info" src="imagens/imagem-newsletter.png" alt="">
+			<div id="form">
+				<form id="newsletter-form">
+					<input type="email" id="user_email" name="user_email" placeholder="Enter your email" required>
+					<input type="text" id="user_name" name="user_name" placeholder="Your name" required>
+					<label id="error-label" for="form"></label>
+					<button id="button-subscribe" type="submit">Subscribe</button>
+				</form>
+					<div id="img-newsletter-section">
+						<img id="img-newsletter" src="imagens/logo-news-letter-section.png" alt="">
+					</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p id="copyright">Developed by <a id="github" href="https://github.com/devnicolly" target="_blank">Nicolly Almeida</a>. <br> All rights reserved.</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

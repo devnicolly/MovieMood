@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Maven+Pro:wght@400..900&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+:root{
+	--ghost-white: #F6F8FF;
+	--ciano-blue: #57969E;
+	--mood-text-color: #3BB9C9;
+	--purple: #A846A0;
+	--ciano-darker:#326268;
+	--ciano-darker-bkgrnd: #1A363A;
+	--background-middle-color: #1D2122;
+	--background-purple: #220E21;
+}
+
+body{
+	background-image: url(imagens/background.png);
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 20vh;
+	width: 100%;
+	background-color: var(--ghost-white);
+}
+
+.img-header{
+	height: 15vh;
+	width: 15vw;
+}
+
+#button-1, #button-2, #button-3{
+	height: 7vh;
+	width: 15vw;
+	margin:0 2vw;
+	border: none;
+	border-radius: 7px;
+}
+
+#button-1{
+	background-color:var(--ciano-blue);
+} #button-2{
+	background-color: var(--ciano-darker-bkgrnd);
+} #button-3{
+	background-color: var(--purple);
+}
+
+a{
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	color: var(--ghost-white);
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+#app-intro{
+	display: flex;
+	margin: 5%;
+
+}
+
+#gif-review{
+	height: 65vh;
+	width: auto;
+}
+
+#texts{
+	padding: 2%;
+	margin-left: 7%;
+}
+
+.title-app-slogan{
+	font-family: "Lilita One", sans-serif;
+  	font-weight: 400;
+	font-size: 5rem;
+	color: var(--ghost-white);
+}
+
+#text-app{
+	margin-top: 4%;
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 400;
+	color: var(--ghost-white);
+	font-size: 2rem;
+	text-align: left;
+	line-height: 2.5rem;
+}
+
+#app-intro span {
+	color: var(--mood-text-color);
+}
+
+#download{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#posters{
+	height: auto;
+	width: 100%;
+}
+
+[data-aos="fade-up"] {
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+  }
+
+.title-download{
+	font-family: "Lilita One", sans-serif;
+  	font-weight: 400;
+	font-size: 5rem;
+	text-align: center;
+	color: var(--ghost-white);
+}
+
+#download span {
+	color: var(--ciano-blue);
+}
+
+#texts-download{
+	margin-top: 7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#text-download{
+	margin-top: 5%;
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 400;
+	color: var(--ghost-white);
+	font-size: 2rem;
+	text-align: center;
+}
+
+#download-button{
+	margin-top: 5%;
+	height: 10vh;
+	width: 35vw;
+	background-color: var(--purple);
+	border: none;
+	border-radius: 20px;
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	color: var(--ghost-white);
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+.text-review-users {
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 400;
+	text-align: center;
+	font-size: 2rem;
+	color: var(--ghost-white);
+}
+
+#reviews-section{
+	margin-top: 7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviews{
+	display: flex;
+	margin-top: 7%;
+	background-color: var(--ciano-darker);
+	height: 50vh;
+	width: 35vw;
+	border-radius: 20px;
+}
+
+.next, .prev{
+	margin-top:25%;
+	position: absolute;
+	cursor: pointer;
+	height: 10vh;
+}
+
+.prev{
+	left: -7vw;
+}
+
+.next{
+	right: -7vw;
+}
+
+.user {
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	text-align: center; 
+	gap: 7vw; 
+	padding: 2%;
+  }
+
+.user-info {
+	margin-top: -10%;
+	display: flex;
+	align-items: center;
+	gap: 2vw;
+}
+
+.user-avatar{
+	border: 2px solid var(--ghost-white);
+	height: 12vh;
+	border-radius: 50%;
+}
+
+.movie-title{
+	margin-top: 2%;
+	font-size: 2rem;
+	font-family: "Lilita One", sans-serif;
+  	font-weight: 400;
+	text-align: center;
+	color: var(--ghost-white);
+}
+
+.user-text{
+	margin-top: 5%;
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 400;
+	font-size: 2rem;
+	color: var(--ghost-white);
+}
+
+.user-name{
+	font-family: "Lilita One", sans-serif;
+  	font-weight: 400;
+	text-align: center;
+	font-size: 1.7rem;
+	color: var(--ghost-white);
+}
+
+#newsletter-info{
+	margin-top: 7%;
+	height: auto;
+	width: 100%;
+	
+}
+
+#label-error{
+	color: var(--ghost-white);
+}
+
+#user_email, #user_name{
+	height: 7vh;
+	width: 35vw;
+	border: none;
+	border-radius: 10px;
+}
+
+#user_email{
+	background-color: var(--ghost-white);
+}
+
+#user_email::placeholder{
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	text-align: center;
+	color: var(--background-purple);
+	font-size: 1.2rem;
+}
+
+#user_name{
+	background-color: var(--ciano-darker);
+}
+
+#user_name::placeholder{
+	color: var(--ghost-white);
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+#user_name:focus {
+	color: var(--ghost-white);
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	text-align: center;
+	font-size: 1.2rem;
+	background-color: var(--ciano-darker);
+	outline: none;
+	border: 2px solid var(--purple);
+}
+
+#user_email:focus{
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	text-align: center;
+	font-size: 1.2rem;
+	color: var(--background-purple);
+	background-color: var(--ghost-white);
+	outline: none;
+	border: 2px solid var(--purple);
+}
+
+#user_email:valid{
+	background-color: var(--ghost-white);
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	text-align: center;
+	font-size: 1.2rem;
+	color: var(--background-purple);
+} #user_email:invalid{
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	text-align: center;
+	font-size: 1.2rem;
+	color: var(--background-purple);
+	background-color: var(--ghost-white);
+}
+
+
+
+#user_name:valid{
+	color: var(--ghost-white);
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	text-align: center;
+	font-size: 1.2rem;
+	background-color: var(--ciano-darker);
+} #user_name:invalid{
+	color: var(--ghost-white);
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	text-align: center;
+	font-size: 1.2rem;
+	background-color: var(--ciano-darker);
+}
+
+#button-subscribe{
+	cursor: pointer;
+	border: none;
+	height: 7vh;
+	width: 25vw;
+	background-color: var(--purple);
+	color: var(--ghost-white);
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 600;
+	font-size: 2rem;
+	border-radius: 10px;
+}
+
+
+#form{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	border: 2px solid var(--ghost-white);
+	padding: 2%;
+	margin-top: 10%;
+	width: 60vw;
+	height: 45vh;
+	border-radius: 15px;
+}
+
+#newsletter-form{
+	display: flex;
+	flex-direction: column;
+	padding-right: 5%;
+	gap: 20px;
+}
+
+#img-newsletter{
+	height: 25vh;
+	width: 20vw;
+}
+
+footer{
+	margin-top: 10%;
+	border-top: solid 1.5px var(--ghost-white);
+	height: 30vh;
+}
+
+#copyright{
+	margin-top: 5%;
+	color: var(--ghost-white);
+	font-family: "Maven Pro", sans-serif;
+  	font-weight: 500;
+	font-size: 2rem;
+	text-align: center;
+}
+
+#github{
+	text-decoration: underline;
+	font-size: 2rem;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+	header {
+	  flex-direction: column;
+	  align-items: center;
+	  height: auto;
+	  padding: 10px;
+	}
+  
+	.img-header {
+	  height: 12vh;
+	  width: auto;
+	}
+  
+	#button-1, #button-2, #button-3 {
+	  width: 30vw;
+	  height: 6vh;
+	  margin: 5px 0;
+	}
+  
+	#app-intro {
+	  flex-direction: column;
+	  align-items: center;
+	  margin: 5%;
+	}
+
+	#posters{
+		height: auto;
+		width: 100%;
+	}
+  
+	#gif-review {
+	  height: 40vh;
+	  width: auto;
+	}
+  
+	#texts {
+	  margin: 5% 0;
+	  padding: 0;
+	  text-align: center;
+	}
+  
+	.title-app-slogan {
+	  font-size: 3.5rem;
+	}
+  
+	#text-app {
+	  font-size: 1.5rem;
+	  line-height: 2rem;
+	  text-align: center;
+	}
+
+	#texts-download{
+		margin-top: 5%;
+	}
+
+	.title-download{
+		font-size: 3.8rem;
+	}
+
+	#text-download{
+		font-size: 1.6rem;
+	}
+
+	#download-button{
+		height: 7vh;
+		width: 40vw;
+		font-size: 1.8rem;
+	}
+  
+	.reviews {
+	  flex-wrap: wrap;
+	  width: 65%;
+	  height: auto;
+	  padding: 10px;
+	  gap: 15px;
+	}
+
+	.user{
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+		text-align: center; 
+	}
+
+	.user-avatar{
+		height: 8vh;
+	}
+
+	.user-name{
+		font-size: 1.5rem;
+	}
+
+	.user-info{
+		margin-top: -10%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 4vw;
+	}
+
+	.user-text{
+		margin-bottom: 5%;
+		font-size: 1.5rem;
+	}
+
+	.prev, .next{
+		height: 5vh;
+	}
+
+	.prev{
+		left: -10vw;
+	}
+
+	.next{
+		right: -10vw;
+	}
+
+	.text-review-users{
+		font-size: 1.5rem;
+	}
+	
+	#form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	height: auto;
+	padding: 5%;
+}
+  
+	#newsletter-form {
+	  padding: 0;
+	}
+  
+	#user_email, #user_name {
+	  width: 80vw;
+	}
+  
+	#button-subscribe {
+	  width: 60vw;
+	  font-size: 1.6rem;
+	}
+  
+	#img-newsletter {
+	  height: 10vh;
+	  width: auto;
+	  margin-top: 15%;
+	}
+  
+	footer {
+	  height: auto;
+	  padding: 10px;
+	}
+  
+	#copyright {
+	  font-size: 1.5rem;
+	}
+  
+	#github {
+	  font-size: 1.5rem;
+	}
+}
+
+  
+  @media (min-width:320px) and (max-width: 480px) {
+	header {
+	  flex-direction: row;
+	  justify-content: space-between;
+	  padding: 5px;
+	  height: fit-content;
+	}
+
+	.buttons{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.buttons a {
+		font-size: 0.8rem;
+	}
+  
+	.img-header {
+	  height: 6vh;
+	  width: auto;
+	}
+  
+	#button-1, #button-2, #button-3 {
+	  height: 4vh;
+	  width: auto;
+	  padding: 0 10px;
+	}
+  
+	#app-intro {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	#texts{
+		margin-top: 10%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.title-app-slogan{
+		font-size: 2.8rem;
+	}
+
+	#gif-review{
+		height: 30vh;
+		width: auto;
+	}
+
+	#posters{
+		width: 100%;
+	}
+  
+	#text-app {
+	  font-size: 1.2rem;
+	  line-height: 1.8rem;
+	}
+
+	.title-download{
+		font-size: 2.5rem;
+	}
+
+	#text-download{
+		font-size: 1.5rem;
+	}
+  
+	#download-button {
+	  width: 60vw;
+	  height: 5vh;
+	  font-size: 1.8rem;
+	  margin: 20px auto;
+	}
+  
+	.reviews {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60%;
+		height: fit-content;
+	}
+
+	.user{
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+		text-align: center; 
+	}
+
+	.user-avatar{
+		height: 6vh;
+	}
+
+	.user-name{
+		font-size: 1.3rem;
+	}
+
+	.user-info{
+		margin-top: -10%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 4vw;
+	}
+
+	.user-text{
+		margin-bottom: 5%;
+		font-size: 1.5rem;
+	}
+
+	.prev, .next{
+		height: 4.5vh;
+	}
+
+	.prev{
+		left: -10vw;
+	}
+
+	.next{
+		right: -10vw;
+	}
+
+	.text-review-users{
+		font-size: 1.5rem;
+	}
+
+	#form {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 10px;
+		padding: 5%;
+		width: 70%;
+		height: 35%;
+	  }
+	
+	  #newsletter-form {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 10px;
+		width: 100%;
+		padding-right: 0;
+	  }
+	
+	  #user_email, #user_name {
+		width: 80vw; 
+		height: 4vh;
+		font-size: 1rem;
+	  }
+	
+	  #button-subscribe {
+		width: 45vw;
+		height: 4vh;
+		font-size: 1.3rem;
+	  }
+
+	  #newsletter-info{
+		width: 100%;
+		height: 100%;
+	  }
+	
+	  #img-newsletter {
+		width: 35%;
+		height: auto;
+		align-self: center;
+	  }
+  
+	.comment {
+	  width: 90%;
+	  margin: 0 auto;
+	  text-align: center;
+	  padding: 10px;
+	  background-color: var(--ciano-darker);
+	  border-radius: 10px;
+	}
+  
+	.movie-title {
+	  font-size: 1.5rem;
+	}
+  
+	footer{
+		height: 15vh;
+	}
+
+	#copyright {
+	  font-size: 1.2rem;
+	}
+  
+	#github {
+	  font-size: 1.2rem;
+	}
+  }
+  
